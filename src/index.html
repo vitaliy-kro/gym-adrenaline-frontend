@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ADRENALIN_GYM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet">
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
@@ -13,22 +17,38 @@
     <!-- <include src="./partials/example.html"></include> -->
     <header>
       <div class="container nav-heder">
-        <a class="logo" href="/"> <span class="logo-web">ADRENALIN</span>_GYM</a>
+        <a class="logo" href="/"> 
+          <span class="logo-web">ADRENALIN</span>_GYM
+        </a>
         <nav class="nav-div">
           <ul class="navigation list">
             <li> <a href="/" class="nav-link link navigation-active">Головна</a> </li>
-            <li> <a href="" class="nav-link link">Корисні статті</a> </li>
-            <li> <a href="" class="nav-link link"> Галерея </a> </li>
-            <li> <a href="" class="nav-link link"> Графік роботи і послуги </a> </li>
-            <li> <a href="" class="nav-link link"> Контакти </a> </li>
+            <li> <a href="" class="nav-link link">Блог</a> </li>
+            <li> <a href="" class="nav-link link">Галерея</a> </li>
+            <li> <a href="" class="nav-link link">Послуги</a> </li>
+            <li> <a href="" class="nav-link link">Контакти</a> </li>
           </ul>
         </nav>
-        <div class="auth-div">
-          <ul class="auth-nav list">
-            <li><a class="auth-list link" href="https://www.instagram.com/gym.adrenalingym.adrenalin/?hl=uk">gym.adrenalin</a></li>
-            <li><a class="auth-list link active" href="tel:+38(097)8836689">+38 (097) 883-66-89</a></li>
-          </ul>
-        </div>
+        <ul class="auth-nav list">
+          <li class="social-item">
+            <a class="auth-list link" href="https://www.instagram.com/gym.adrenalin/?hl=uk">
+              <svg class="social-icon">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+              <span> gym.adrenalin</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="auth-list link" href="tel:+38(097)8836689">
+              <svg class="social-icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              <span>(097) 883-66-89</span>
+            </a>
+          </li>
+        </ul>
+          
+        
         <button class="menu-toggle js-open-menu " type="button" aria-expanded="false" aria-controls="mobile-menu">
           <svg class="" width="32" height="22">
             <use href="./images/icons.svg#menu"></use>
@@ -46,29 +66,31 @@
     
       <ul class="mobile-menu list">
         <li> <a href="/" class="nav-link link navigation-active">Головна</a> </li>
-        <li> <a href="" class="nav-link link">Корисні статті</a> </li>
-        <li> <a href="" class="nav-link link"> Галерея </a> </li>
-        <li> <a href="" class="nav-link link"> Графік роботи і послуги </a> </li>
-        <li> <a href="" class="nav-link link"> Контакти </a> </li>
+        <li> <a href="" class="nav-link link">Блог</a> </li>
+        <li> <a href="" class="nav-link link">Галерея</a> </li>
+        <li> <a href="" class="nav-link link">Послуги</a> </li>
+        <li> <a href="" class="nav-link link">Контакти</a> </li>
       </ul>
-      <div>
-        <ul class="mobile-auth social-list list">
-          <li class="social-item">
-            <a class="social-link instagram" href="https://www.instagram.com/gym.adrenalingym.adrenalin/?hl=uk">
-              <svg class="social-icon">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>gym.adrenalin</a>
-          </li>
-          <li class="social-item">
-            <a href="https://www.facebook.com/profile.php?id=100054356345985" class="social-link facebook">
-              <svg class="social-icon">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li><a class="auth-list link active" href="tel:+38(097)8836689">+38 (097) 883-66-89</a></li>
-        </ul>
-      </div>
+      <ul class="mobile-auth social-list list">
+        <li class="social-item">
+          <a class="social-link instagram" href="https://www.instagram.com/gym.adrenalingym.adrenalin/?hl=uk">
+            <svg class="social-icon">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="tel:+38(097)8836689" class="social-link">
+            <svg class="social-icon">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            <span>+38 (097) 883-66-89</span>
+          </a>
+        </li>
+        
+      </ul>
+        
+      
     </div>
     <!-- <script src="./js/modal.js"></script> -->
     <script src="./mobile-menu.js"></script>
