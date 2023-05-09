@@ -40,7 +40,9 @@ li {
     margin: 0px;
     padding: 0px;
 }
-
+ul {
+    list-style: none;
+}
 img {
     display: block;
     max-width: 100%;
@@ -408,4 +410,40 @@ header {
     }
 .social-item {
     display: flex;
+}
+
+// --------------------------------------section hero------------------------------------------------//
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.cont-hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    text-align: center;
+}
+.hero-title {
+    // color: #FFFFFF;
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-motivation {
+    display: flex;
+    gap: 20px;
+   
+}
+.hero-motivation > li {
+    width: calc((100% - 40px)/2);
 }
