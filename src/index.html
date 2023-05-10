@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADRENALIN_GYM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <!-- <include src="./partials/example.html"></include> -->
+    <header>
+      <div class="container nav-heder">
+        <a class="logo" href="/"> 
+          <span class="logo-web">ADRENALIN</span>_GYM
+        </a>
+        <nav class="nav-div">
+          <ul class="navigation list">
+            <li> <a href="/" class="nav-link link navigation-active">Головна</a> </li>
+            <li> <a href="" class="nav-link link">Галерея</a> </li>
+            <li> <a href="" class="nav-link link">Послуги</a> </li>
+            <li> <a href="" class="nav-link link">Блог</a> </li>
+            <li> <a href="" class="nav-link link">Контакти</a> </li>
+          </ul>
+        </nav>
+        <ul class="auth-nav list">
+          <li class="social-item">
+            <a class="auth-list link" href="https://www.instagram.com/gym.adrenalin/?hl=uk">
+              <svg class="social-icon">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+              <span> gym.adrenalin</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="auth-list link" href="tel:+38(097)8836689">
+              <svg class="social-icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              <span>(097) 883-66-89</span>
+            </a>
+          </li>
+        </ul>
+          
+        
+        <button class="menu-toggle js-open-menu " type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="" width="32" height="22">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="container cont-hero">
+          <h1 class="hero-title">Тренажерний зал "Adrenalin"</h1>
+          <p class="visually-hidden">Тренажерний зал в Тернополі на БАМі</p>
+          <h3 class="hero-desc">Зробіть три кроки до здорового життя!</h3>
+          <ul class="hero-motivation">
+            <li>Збалансоване харчування та здорова їжа</li>
+            <li>Фізичні вправи та догляд за тілом</li>
+            <li>Жити в гармонії із собою, ділитися насолодою з іншими.</li>
+          </ul>
+          <ul class="hero-calculator">
+            <p>Калькулятори</p>
+            <li>Індекс маси тіла</li>
+            <li>% жиру в організмі</li>
+            <li>Потреба калорій</li>
+          </ul>
+          <!-- <button class="sec-hero-button" type="button" data-modal-open>Розрахувати</button> -->
+        </div>
+      </section>
+      <section class="section-hero section">
+        <li class="gallery__item">
+          <a class="gallery__link" href="">
+            <img class="gallery__image" src="#" alt="Image description" />
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="">
+            <img class="gallery__image" src="#" alt="Image description" />
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="">
+            <img class="gallery__image" src="#" alt="Image description" />
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="">
+            <img class="gallery__image" src="#" alt="Image description" />
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="">
+            <img class="gallery__image" src="#" alt="Image description" />
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="">
+            <img class="gallery__image" src="#" alt="Image description" />
+          </a>
+        </li>
+      </section >
+
+
+
+
+
+    </main>
+
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu close-button">
+        <svg class="close-svg" width="8" height="8">
+          <use href="./images/icons.svg#close-button"></use>
+        </svg>
+      </button>
+    
+      <ul class="mobile-menu list">
+        <li> <a href="/" class="nav-link link navigation-active">Головна</a> </li>
+        <li> <a href="" class="nav-link link">Галерея</a> </li>
+        <li> <a href="" class="nav-link link">Послуги</a> </li>
+        <li> <a href="" class="nav-link link">Блог</a> </li>
+        <li> <a href="" class="nav-link link">Контакти</a> </li>
+      </ul>
+      <ul class="mobile-auth social-list list">
+        <li class="social-item">
+          <a class="social-link instagram" href="https://www.instagram.com/gym.adrenalingym.adrenalin/?hl=uk">
+            <svg class="social-icon">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="tel:+38(097)8836689" class="social-link">
+            <svg class="social-icon">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            <span>+38 (097) 883-66-89</span>
+          </a>
+        </li>
+        
+      </ul>
+        
+      
+    </div>
+    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./mobile-menu.js"></script>
+  </body>
+</html>
