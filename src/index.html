@@ -23,7 +23,7 @@
         <nav class="nav-div">
           <ul class="navigation list">
             <li> <a href="/" class="nav-link link navigation-active">Головна</a> </li>
-            <li> <a href="" class="nav-link link">Галерея</a> </li>
+            <!-- <li> <a href="" class="nav-link link">Галерея</a> </li> -->
             <li> <a href="" class="nav-link link">Послуги</a> </li>
             <li> <a href="" class="nav-link link">Блог</a> </li>
             <li> <a href="" class="nav-link link">Контакти</a> </li>
@@ -47,11 +47,15 @@
             </a>
           </li>
         </ul>
-          
-        
-        <button class="menu-toggle js-open-menu " type="button" aria-expanded="false" aria-controls="mobile-menu">
+               
+        <button class="menu-toggle-btn js-open-menu " type="button" aria-expanded="false" aria-controls="mobile-menu">
           <svg class="" width="32" height="22">
             <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+        <button class="menu-toggle-btn js-close-menu">
+          <svg class="close-svg" width="32" height="32">
+            <use href="./images/icons.svg#close-button"></use>
           </svg>
         </button>
       </div>
@@ -77,36 +81,40 @@
         </div>
       </section>
       <section class="section-galery section">
-        <li class="gallery__item">
-          <a class="gallery__link" href="">
-            <img class="gallery__image" src="#" alt="foto Adrenalin gym" />
-          </a>
-        </li>
-        <li class="gallery__item">
-          <a class="gallery__link" href="">
-            <img class="gallery__image" src="#" alt="foto Adrenalin gym" />
-          </a>
-        </li>
-        <li class="gallery__item">
-          <a class="gallery__link" href="">
-            <img class="gallery__image" src="#" alt="foto Adrenalin gym" />
-          </a>
-        </li>
-        <li class="gallery__item">
-          <a class="gallery__link" href="">
-            <img class="gallery__image" src="#" alt="foto Adrenalin gym" />
-          </a>
-        </li>
-        <li class="gallery__item">
-          <a class="gallery__link" href="">
-            <img class="gallery__image" src="#" alt="foto Adrenalin gym" />
-          </a>
-        </li>
-        <li class="gallery__item">
-          <a class="gallery__link" href="">
-            <img class="gallery__image" src="#" alt="foto Adrenalin gym" />
-          </a>
-        </li>
+        <div class="container">
+          <ul class="galery-list">
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/foto_zal/foto_zal-1.jpg">
+                <img class="gallery__image" src="./images/foto_zal/foto_zal-1-640.jpg" alt="foto Adrenalin gym" loading="lazy" />
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/Foto_zal/foto_zal_2.jpg">
+                <img class="gallery__image" src="./images/Foto_zal/foto_zal_2-640.jpg" alt="foto Adrenalin gym" loading="lazy"/>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/Foto_zal/foto_zal_3.jpg">
+                <img class="gallery__image" src="./images/Foto_zal/foto_zal_3-640.jpg" alt="foto Adrenalin gym" loading="lazy"/>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/Foto_zal/foto_zal_4.jpg">
+                <img class="gallery__image" src="./images/Foto_zal/foto_zal_4-640.jpg" alt="foto Adrenalin gym" loading="lazy"/>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/Foto_zal/foto_zal_5.jpg">
+                <img class="gallery__image" src="./images/Foto_zal/foto_zal_5-640.jpg" alt="foto Adrenalin gym" loading="lazy"/>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/Foto_zal/foto_zal_6.jpg">
+                <img class="gallery__image" src="./images/Foto_zal/foto_zal_6-640.jpg" alt="foto Adrenalin gym" loading="lazy"/>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section >
 
 
@@ -117,15 +125,9 @@
 
     <!-- _____________________________Мобільна менюшка___________________________ -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg class="close-svg" width="32" height="32">
-          <use href="./images/icons.svg#close-button"></use>
-        </svg>
-      </button>
-    
       <ul class="mobile-menu list">
-        <li> <a href="/" class="nav-link link navigation-active">Головна</a> </li>
-        <li> <a href="" class="nav-link link">Галерея</a> </li>
+        <!-- <li> <a href="/" class="nav-link link navigation-active">Головна</a> </li> -->
+        <!-- <li> <a href="" class="nav-link link">Галерея</a> </li> -->
         <li> <a href="" class="nav-link link">Послуги</a> </li>
         <li> <a href="" class="nav-link link">Блог</a> </li>
         <li> <a href="" class="nav-link link">Контакти</a> </li>
@@ -150,6 +152,6 @@
       </ul>
     </div>
     <!-- <script src="./js/modal.js"></script> -->
-    <script src="./mobile-menu.js"></script>
+    <script type="module" src="./mobile-menu.js"></script>
   </body>
 </html>
