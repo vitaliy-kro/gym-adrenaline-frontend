@@ -24,7 +24,7 @@
           <ul class="navigation list">
             <li> <a href="/" class="nav-link link navigation-active">Головна</a> </li>
             <!-- <li> <a href="" class="nav-link link">Галерея</a> </li> -->
-            <li> <a href="" class="nav-link link">Послуги</a> </li>
+            <li> <a href="#sec-service" class="nav-link link">Послуги</a> </li>
             <li> <a href="" class="nav-link link">Блог</a> </li>
             <li> <a href="" class="nav-link link">Контакти</a> </li>
           </ul>
@@ -116,22 +116,23 @@
           </ul>
         </div>
       </section>
-      <section class="section-services">
+      <section class="section-services" id="sec-service">
         <div class="container">
           <ul class="services-item">
-            <li class="Training-list">
+            <li class="training-list">
               <p>Абонементи на тренування від 400грн/міс</p>
-              <button class="services-more-btn" type="button">Детальніше</button>
+              <button class="services-more-btn js-training" type="button">Детальніше</button>
             </li>
             <li class="trener-list">
               <p>Персональні тренування з тренером від 200грн/тренeнування</p>
-              <button class="services-more-btn" type="button">Детальніше</button>
+              <button class="services-more-btn js-trener" type="button">Детальніше</button>
             </li>
             <li class="program-plan-list">
               <p>Індивідуальні плани тренувань і харчування від 100грн</p>
-              <button class="services-more-btn" type="button">Детальніше</button>
+              <button class="services-more-btn js-program-plan" type="button">Детальніше</button>
             </li>
           </ul>
+          <div class="js-more"></div>
 
         </div>
       </section>
@@ -146,7 +147,7 @@
       <ul class="mobile-menu list">
         <!-- <li> <a href="/" class="nav-link link navigation-active">Головна</a> </li> -->
         <!-- <li> <a href="" class="nav-link link">Галерея</a> </li> -->
-        <li> <a href="" class="nav-link link">Послуги</a> </li>
+        <li> <a href="#sec-service" class="nav-link link">Послуги</a> </li>
         <li> <a href="" class="nav-link link">Блог</a> </li>
         <li> <a href="" class="nav-link link">Контакти</a> </li>
       </ul>
@@ -170,6 +171,5 @@
       </ul>
     </div>
     <!-- <script src="./js/modal.js"></script> -->
-    <script type="module" src="./mobile-menu.js"></script>
   </body>
 </html>
