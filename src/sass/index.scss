@@ -77,7 +77,7 @@ img {
     padding-left: 15px;
     padding-right: 15px;
   
-    max-width: 1158px;
+    max-width: 1740px;
     @media screen and (max-width: 767px) {   max-width: 428px;  };
     @media screen and (min-width: 768px) and (max-width: 1199px) { max-width: 900px;};
 }
@@ -391,4 +391,23 @@ header {
         0px 1px 6px rgba(46, 47, 66, 0.08);
     // object-fit: cover;
     overflow: hidden;
+}
+// _________________________________section services_______________________________
+
+.services-item {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+
+
+}
+.services-item > li {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+   
 }
