@@ -2,19 +2,15 @@
 // @import './example';
 
 :root {
-    --brand-color: #4D5AE5;
-    --background: #2E2F42;
-    --zagolovok: #2E2F42;
-    --hover-color: #404BBF;
+    --brand-color: #A2B035;
+    --zagolovok: #2B2B2B;
+    --hover-color: #FFF017;
+    --background: #85777B;
+    --accent-color: #F24171;
     /* колір тексту    */
     --text: #434455;
     --studio: #F4F4FD;
-    /*  текст підвал                  #E7E9FC  */
-    --accent: #E7E9FC;
-
-    --margin-left: 24px;
-    --margim-top-botton-h3p: 32px;
-    --margin-top-p: 8px;
+    
 }
 
 
@@ -393,21 +389,25 @@ header {
     overflow: hidden;
 }
 // _________________________________section services_______________________________
-
-.services-item {
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    
-
-
+.section-title {
+    text-align: center;
 }
-.services-item > li {
-    width: 300px;
+.services-list {
     display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.services-list > li {
+    text-align: center;
+}
+.services-more-btn{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.services-more-div {
+display: flex;
+gap: 20px;
+justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
-   
 }
