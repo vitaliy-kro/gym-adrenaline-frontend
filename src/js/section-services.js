@@ -15,7 +15,7 @@ programPlan.addEventListener('click', (event) => {divMorePlan.insertAdjacentHTML
 function OnLoadMore(event, data) {
     event.target.setAttribute('disabled', 'disabled');
     // console.log('привіт')
-    return data.map(({ name, duration, numbers, cost }) => {
+    return data.map(({name, duration, numbers, cost}) => {
         return  `<ul class="service-item-more">
                     <li>${name}</li>
                     <li><span>Тривалість:</span> ${duration}</li> 
