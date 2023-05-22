@@ -78,8 +78,8 @@ img {
     padding-top: 52px;
     padding-bottom: 52px;
     @media screen and (min-width: 1200px) {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 
 
@@ -400,12 +400,21 @@ header {
 }
 .services-more-btn{
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
 }
 .services-more-div {
-display: flex;
-gap: 20px;
-justify-content: center;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
     flex-wrap: wrap;
+}
+.services-close-btn{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    border-style: none;
+    padding: 3px;
+    background-color: transparent;    
 }
