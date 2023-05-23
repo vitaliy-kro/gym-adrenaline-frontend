@@ -36,6 +36,7 @@ const lightbox = new SimpleLightbox('.gallery__link');
     mobileMenu.classList.remove('is-open');
     openMenuBtn.classList.remove('is-open');
     closeMenuBtn.classList.remove('is-open');
+    bodyScroll.classList.remove('no-scroll');   
 
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);

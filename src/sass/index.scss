@@ -400,8 +400,8 @@ header {
 }
 .services-more-btn{
     display: inline-block;
-    // margin-left: auto;
-    // margin-right: auto;
+
+
 }
 .services-more-div {
     position: relative;
@@ -412,9 +412,14 @@ header {
 }
 .services-close-btn{
     position: absolute;
-    bottom: 50px;
-    right: 50px;
+    bottom: 20px;
+    right: 0px;
     border-style: none;
     padding: 3px;
-    background-color: transparent;    
+    background-color: transparent;
+    color: var(--brand-color);  
+    svg {  fill: currentColor;  }  
+}
+.hide {
+    display: none;
 }
