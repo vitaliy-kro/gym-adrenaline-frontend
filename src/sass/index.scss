@@ -387,39 +387,110 @@ header {
     overflow: hidden;
 }
 // _________________________________section services_______________________________
+.section-services {
+    // background-color: var(--text);
+    background: linear-gradient(90deg, rgba(43,43,43,1) 0%, rgba(67,68,85,1) 72%, rgba(133,119,123,1) 100%);
+}
 .section-title {
     text-align: center;
+    color: var(--brand-color);
 }
 .services-list {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
+
+    margin-top: 30px;
 }
 .services-list > li {
+    // position: relative;
     text-align: center;
+    background-color: var(--background);
+    color: var(--hover-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.training-item > p,
+.trainer-item > p,
+.program-plan-item > p {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--brand-color);
 }
 .services-more-btn{
     display: inline-block;
-
-
+    border-radius: 5px;
+    background-color: #EB8C73;
+    
 }
 .services-more-div {
-    position: relative;
+    
     display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
 }
+// Випадаюча менюшка
+.service-item-more {
+    text-align: start;
+    background-color: #B89991;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    width: 170px;
+}
+.service-item-more span {
+    color: #434455;
+}
+.service-item-more > li {
+    padding: 3px;
+}
+
+.service-item-more > li:first-child { 
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--zagolovok);
+}
+
 .services-close-btn{
-    position: absolute;
-    bottom: 20px;
-    right: 0px;
     border-style: none;
     padding: 3px;
     background-color: transparent;
-    color: var(--brand-color);  
+    color: #EB8C73;  
     svg {  fill: currentColor;  }  
 }
+.hide {
+    display: none;
+}
+
+// ________________________section  blog____________________
+.section-blog {text-align: center;
+    background: linear-gradient(to bottom right, #67915D, #A6B891);
+}
+.container-blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.blog-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 5px;
+    
+    // overflow: scroll;
+
+    // width: 90%;
+    // height: 300px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #1687d933;
+}
+
+// ___________text  read more_______
 .hide {
     display: none;
 }

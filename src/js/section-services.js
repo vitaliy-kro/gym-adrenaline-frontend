@@ -29,37 +29,30 @@ function OnLoadMore(event, data) {
                     <li><span>Тривалість:</span> ${duration}</li> 
                     <li><span>Кількість:</span> ${numbers}</li>
                     <li><span>Вартість:</span> ${cost}</li>
-                </ul>
-                <button class="" type="button">Почати зараз</button>
-                `
-                
+            
+                </ul>`
     }).join("")
 }
 
 function hideText (e) {
-    console.log(e.currentTarget);
-    // e.target.classList.add('hide');
+    // console.log(e.currentTarget);
     const dataTipe = e.currentTarget.getAttribute('dataType');
-    const buttonMurck = `<button class="services-close-btn hide" dataType='${dataTipe}' type="button">
-    <svg  width="32" height="32">
-      <use href="./images/icons.svg#icon-circle-up"></use>
-    </svg>
-  </button> `
+   
     switch (dataTipe) {
         case "training-close":
-            e.currentTarget.classList.add('hide');
-            divMoreTraining.innerHTML = buttonMurck;
-            trainingList.classList.remove('hide');
+            e.currentTarget.classList.toggle('hide');
+            divMoreTraining.innerHTML = '';
+            trainingList.classList.toggle('hide');
             break;
         case "coach-close":
-            e.currentTarget.classList.add('hide');
-            divMoreCoach.innerHTML = buttonMurck;
-            trenerPlan.classList.remove('hide');
+            e.currentTarget.classList.toggle('hide');
+            divMoreCoach.innerHTML = '';
+            trenerPlan.classList.toggle('hide');
             break;
         case "program-plan-close":
-            e.currentTarget.classList.add('hide');
-            divMorePlan.innerHTML = buttonMurck;
-            programPlan.classList.remove('hide');
+            e.currentTarget.classList.toggle('hide');
+            divMorePlan.innerHTML = '';
+            programPlan.classList.toggle('hide');
             break;
         default:
             break;
@@ -73,16 +66,16 @@ function hideButtonMore (event){
       
       switch (event.target.getAttribute('dataType')) {
         case "training":
-            event.target.classList.add('hide');
-            trainingCloseBtn.classList.remove('hide');
+            event.target.classList.toggle('hide');
+            trainingCloseBtn.classList.toggle('hide');
             break;
         case "coach":
-            event.target.classList.add('hide');
-            coachCloseBtn.classList.remove('hide');
+            event.target.classList.toggle('hide');
+            coachCloseBtn.classList.toggle('hide');
             break;
         case "program-plan":
-            event.target.classList.add('hide');
-            planCloseBtn.classList.remove('hide');
+            event.target.classList.toggle('hide');
+            planCloseBtn.classList.toggle('hide');
             break;
         default:
             break;
