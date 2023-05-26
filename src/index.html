@@ -24,7 +24,7 @@
           <ul class="navigation list">
             <li> <a href="/" class="nav-link link navigation-active">Головна</a> </li>
             <!-- <li> <a href="" class="nav-link link">Галерея</a> </li> -->
-            <li> <a href="" class="nav-link link">Послуги</a> </li>
+            <li> <a href="#sec-service" class="nav-link link">Послуги</a> </li>
             <li> <a href="" class="nav-link link">Блог</a> </li>
             <li> <a href="" class="nav-link link">Контакти</a> </li>
           </ul>
@@ -49,11 +49,11 @@
         </ul>
                
         <button class="menu-toggle-btn js-open-menu " type="button" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="" width="32" height="22">
+          <svg class="" width="40" height="25">
             <use href="./images/icons.svg#menu"></use>
           </svg>
         </button>
-        <button class="menu-toggle-btn js-close-menu">
+        <button class="menu-toggle-btn js-close-menu" type="button">
           <svg class="close-svg" width="32" height="32">
             <use href="./images/icons.svg#close-button"></use>
           </svg>
@@ -89,36 +89,83 @@
               </a>
             </li>
             <li class="gallery__item">
-              <a class="gallery__link" href="./images/Foto_zal/foto_zal_2.jpg">
+              <a class="gallery__link" href="./images/foto_zal/foto_zal_2.jpg">
                 <img class="gallery__image" src="./images/Foto_zal/foto_zal_2-640.jpg" alt="foto Adrenalin gym" loading="lazy"/>
               </a>
             </li>
             <li class="gallery__item">
-              <a class="gallery__link" href="./images/Foto_zal/foto_zal_3.jpg">
+              <a class="gallery__link" href="./images/foto_zal/foto_zal_3.jpg">
                 <img class="gallery__image" src="./images/Foto_zal/foto_zal_3-640.jpg" alt="foto Adrenalin gym" loading="lazy"/>
               </a>
             </li>
             <li class="gallery__item">
-              <a class="gallery__link" href="./images/Foto_zal/foto_zal_4.jpg">
+              <a class="gallery__link" href="./images/foto_zal/foto_zal_4.jpg">
                 <img class="gallery__image" src="./images/Foto_zal/foto_zal_4-640.jpg" alt="foto Adrenalin gym" loading="lazy"/>
               </a>
             </li>
             <li class="gallery__item">
-              <a class="gallery__link" href="./images/Foto_zal/foto_zal_5.jpg">
+              <a class="gallery__link" href="./images/foto_zal/foto_zal_5.jpg">
                 <img class="gallery__image" src="./images/Foto_zal/foto_zal_5-640.jpg" alt="foto Adrenalin gym" loading="lazy"/>
               </a>
             </li>
             <li class="gallery__item">
-              <a class="gallery__link" href="./images/Foto_zal/foto_zal_6.jpg">
+              <a class="gallery__link" href="./images/foto_zal/foto_zal_6.jpg">
                 <img class="gallery__image" src="./images/Foto_zal/foto_zal_6-640.jpg" alt="foto Adrenalin gym" loading="lazy"/>
               </a>
             </li>
           </ul>
         </div>
-      </section >
-
-
-
+      </section>
+      <section class="section-services section" id="sec-service">
+        <div class="container">
+          <h2 class="section-title">Що ми пропонуємо?</h2>
+          <ul class="services-list">
+            <li class="training-item">
+              <p>Абонементи на тренування від 400грн</p>
+              <button class="services-more-btn" dataType='training' type="button">Детальніше</button>
+              <button class="services-close-btn hide" dataType='training-close' type="button">
+                <svg  width="32" height="32">
+                  <use href="./images/icons.svg#icon-circle-up"></use>
+                </svg>
+              </button>
+              <div class="services-more-div  js-training">
+                   
+              </div>
+            </li>
+            <li class="trainer-item">
+              <p>Персональні тренування з тренером від 200грн</p>
+              <button class="services-more-btn" dataType='coach' type="button">Детальніше</button>
+              <button class="services-close-btn hide" dataType='coach-close' type="button">
+                <svg  width="32" height="32">
+                  <use href="./images/icons.svg#icon-circle-up"></use>
+                </svg>
+              </button>
+              <div class="services-more-div js-coach">
+                   
+              </div>
+            </li>
+            <li class="program-plan-item">
+              <p>Індивідуальні плани тренувань і харчування від 100грн</p>
+              <button class="services-more-btn" dataType='program-plan'type="button">Детальніше</button>
+              <button class="services-close-btn hide" dataType='program-plan-close' type="button">
+                <svg  width="32" height="32">
+                  <use href="./images/icons.svg#icon-circle-up"></use>
+                </svg>
+              </button>   
+              <div class="services-more-div js-plan">
+                
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      <section class="section-blog section">
+        <div class="container container-blog">
+          <h2>Статті про тренування, харчування і мотивацію</h2>
+        </div>
+      </section>
+      
 
 
     </main>
@@ -128,7 +175,7 @@
       <ul class="mobile-menu list">
         <!-- <li> <a href="/" class="nav-link link navigation-active">Головна</a> </li> -->
         <!-- <li> <a href="" class="nav-link link">Галерея</a> </li> -->
-        <li> <a href="" class="nav-link link">Послуги</a> </li>
+        <li> <a href="#sec-service" class="nav-link link">Послуги</a> </li>
         <li> <a href="" class="nav-link link">Блог</a> </li>
         <li> <a href="" class="nav-link link">Контакти</a> </li>
       </ul>
@@ -151,7 +198,6 @@
         </li>
       </ul>
     </div>
-    <!-- <script src="./js/modal.js"></script> -->
-    <script type="module" src="./mobile-menu.js"></script>
+    <script src="./js/read-more-btn.js"></script>
   </body>
 </html>

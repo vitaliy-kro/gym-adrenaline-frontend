@@ -14,6 +14,7 @@ const lightbox = new SimpleLightbox('.gallery__link');
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  const bodyScroll = document.querySelector('body');
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -22,11 +23,8 @@ const lightbox = new SimpleLightbox('.gallery__link');
     mobileMenu.classList.toggle('is-open');
     openMenuBtn.classList.toggle('is-open');
     closeMenuBtn.classList.toggle('is-open');
-
-    const scrollLockMethod = !isMenuOpen
-      ? 'disableBodyScroll'
-      : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
+    
+    bodyScroll.classList.toggle('no-scroll');   
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);
@@ -38,6 +36,7 @@ const lightbox = new SimpleLightbox('.gallery__link');
     mobileMenu.classList.remove('is-open');
     openMenuBtn.classList.remove('is-open');
     closeMenuBtn.classList.remove('is-open');
+    bodyScroll.classList.remove('no-scroll');   
 
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
