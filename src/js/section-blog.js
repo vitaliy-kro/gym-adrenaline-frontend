@@ -13,42 +13,32 @@ const getProducts = async () => {
         console.log(error.message)
     }
 }
-// console.log(getProducts());
+console.log(getProducts());
 
 
 async function createMarkup() {
     const products = await getProducts()
-    const markup = products.map(({ title, description, imageURL, topic }) =>
-        `<div class="blog-item">
+    
+
+    const markup = products.map(({ title, description, imageURL, topic }) => {
+        const fomattedDescrition = description.replace(/\\n/g, '<br>\n');
+        // const description = document.getElementById("description");
+        // description.insertAdjacentHTML("beforeend", fomattedDescrition);
+
+        return `<div class="blog-item">
         <h3>${title}</h3>
         <h4>Тема: ${topic}</h4>
         <img src="${imageURL}" alt="${title}" width ="350" height="220">
-        <p class="content">${description}</p>
+        <p class="content">${fomattedDescrition}</p>
         <button onclick="readMore(this)">Читати більше</button>
       </div>`
+    }
     ).join('');
     
     container.insertAdjacentHTML('beforeend', markup);
-    hideLongText ();
+    
 }
 
 createMarkup();
 
-// _____________Приховування тексту____________________
-function hideLongText () {
-    let numberOfCharac = 200;
-    let contents = document.querySelectorAll('.content');
 
-    contents.forEach( item =>{
-        if (item.textContent.length < numberOfCharac) {
-            item.nextElementSibling.style.display = "none";
-        }
-        else {
-            let displayText = item.textContent.slice(0,numberOfCharac);
-            let moreText = item.textContent.slice(numberOfCharac);
-            item.innerHTML=`${displayText}<span class="dots">...</span>
-            <span class="hide more">${moreText}</span> `;
-        }
-    });
-
-}
