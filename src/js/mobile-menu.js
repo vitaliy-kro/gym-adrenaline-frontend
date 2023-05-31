@@ -39,6 +39,6 @@ const lightbox = new SimpleLightbox('.gallery__link');
     bodyScroll.classList.remove('no-scroll');   
 
     openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
+    
   });
 })();

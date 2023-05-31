@@ -74,10 +74,21 @@
           <ul class="hero-calculator">
             <p>Калькулятори</p>
             <li>Індекс маси тіла
-              <p>Для введення даних переміщуйте повзунок на лінії</p>
-              <input id="weight-size-control" type="range" min="40" max="130" />
-              <br />
-              <p>Вага (кг):<span id="weight">0</span></p> 
+              <form action="" class="calc-imt">
+                <p>Для введення даних переміщуйте повзунок на лінії</p>
+                <label for="weight">
+                  Вага (кг): 
+                  <input name="weight" type="number" min="40" max="130"/>
+                </label>
+                <input name="weight-size-control" type="range" min="40" max="130" />
+                
+                <label for="height">
+                  Ріст (см):
+                  <input name="height" type="number" min="100" max="220"/>
+                </label>
+                <input name="height-size-control" type="range" min="100" max="220" />
+                <p>Індекс маси тіла:<span name="imt"></span></p>
+              </form>
             </li>
             <li>% жиру в організмі</li>
             <li>Потреба калорій</li>
