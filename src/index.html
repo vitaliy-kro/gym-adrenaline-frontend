@@ -67,8 +67,12 @@
           <p class="visually-hidden">Тренажерний зал в Тернополі на БАМі</p>
           <h3 class="hero-desc">Зробіть три кроки до здорового життя!</h3>
           <ul class="hero-motivation">
-            <li>Збалансоване харчування та здорова їжа</li>
-            <li>Фізичні вправи та догляд за тілом</li>
+            <li>Збалансоване харчування та здорова їжа
+              <img src="./images/balanced-nutrition.png" alt="balanced-nutrition" width="150" height="150">
+            </li>
+            <li>Фізичні вправи та догляд за тілом
+              <img src="./images/exercise.png" alt="exercise" width="150" height="150">
+            </li>
             <li>Жити в гармонії із собою, ділитися насолодою з іншими.</li>
           </ul>
           <ul class="hero-calculator">
@@ -79,15 +83,17 @@
                 <label for="weight">
                   Вага (кг): 
                   <input name="weight" type="number" min="40" max="130"/>
+                  <input name="weight-size-control" type="range" min="40" max="130" />
                 </label>
-                <input name="weight-size-control" type="range" min="40" max="130" />
+                
                 
                 <label for="height">
                   Ріст (см):
                   <input name="height" type="number" min="100" max="220"/>
+                  <input name="height-size-control" type="range" min="100" max="220" />
                 </label>
-                <input name="height-size-control" type="range" min="100" max="220" />
-                <p>Індекс маси тіла:<span name="imt"></span></p>
+                
+                <label>Індекс маси тіла:</label>
               </form>
             </li>
             <li>% жиру в організмі</li>

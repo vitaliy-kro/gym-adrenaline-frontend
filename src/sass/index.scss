@@ -357,12 +357,34 @@ header {
     margin-right: auto;
 }
 .hero-motivation {
+    margin-top: 20px;
     display: flex;
     gap: 20px;
    
 }
 .hero-motivation > li {
     width: calc((100% - 40px)/2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-desc {
+    margin-top: 20px;
+}
+.hero-calculator {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.hero-calculator > li {
+    padding: 10px;
+}
+.calc-imt {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 // _________________________________section galery_____________________

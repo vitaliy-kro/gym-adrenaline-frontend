@@ -1,67 +1,56 @@
-import debounce from 'lodash.debounce';
-
 const indexBodyWeight = document.querySelector('.calc-imt')
 
-indexBodyWeight.addEventListener('input', debounce(addStorage, 500))
+indexBodyWeight.addEventListener('input', addStorage)
 
-
+// const IMT_CALC = "calc_1";
+const calc_value = {
+    weight: 0,
+    height: 0,
+}
 
     
 function addStorage(e) {
    const nameInput = e.target.name;
 //    console.dir(e.target)
    
-    let selectedWeight = 0;
-    let selectedHeight = 0;
     let resultImt = 0;
-    
+    const targetValue = e.target.value;
+
    switch (nameInput) {
     case "weight":
-        e.target.form[1].value =  e.target.value;
-        selectedWeight = e.target.value;
-        
+        e.target.form[1].value =  targetValue;
+        calc_value.weight = targetValue;
         break;
     case "weight-size-control":
-        e.target.form[0].value =  e.target.value;
-        selectedWeight = e.target.value;
-        
-        // e.target.form.children[5].textContent +=`${resultImt}`
-        // console.log(e.target.form.children[5].textContent)
+        e.target.form[0].value =  targetValue;
+        calc_value.weight = targetValue;
         break;
     case "height":
-        e.target.form[3].value =  e.target.value;
-        selectedHeight = e.target.value;
+        e.target.form[3].value =  targetValue;
+        calc_value.height = targetValue;
         break;
     case "height-size-control":
-        e.target.form[2].value =  e.target.value;
-        selectedHeight = e.target.value;
+        e.target.form[2].value =  targetValue;
+        calc_value.height = targetValue;
         break;
     default:
         break;
   }
-    
 
-    //   let userValues = localStorage.getItem(STORAGE_FORM_KEY);
-    //   userValues = userValues ? JSON.parse(userValues) : {};
-    //     userValues[e.target.name] = e.target.value;
-       
-    //   localStorage.setItem(STORAGE_FORM_KEY, JSON.stringify(userValues));
-    // }
-    console.log(selectedWeight);
-    console.log(selectedHeight);
-    if (selectedWeight && selectedWeight) {
-        resultImt = selectedWeight / ((selectedHeight/100)**2)
-    }
-        console.log(resultImt);
+    // localStorage.setItem(IMT_CALC, JSON.stringify(calc_value) )
+    // const savedSettings = localStorage.getItem(IMT_CALC);
+    // const parsedSettings = JSON.parse(savedSettings);
+        
+    calcImt (e);
+                
     
 }
 
-
-
-
-
-
-
-// indexBodyWeight.textContent= weightInput.value / ((heightInput.value/100)**2);
+function calcImt (e) {
+     if (calc_value.weight && calc_value.height) {
+        resultImt = calc_value.weight / ((calc_value.height/100)**2)
+        e.target.form.children[3].textContent = `Індекс маси тіла:${resultImt.toFixed(1)}`
+    }
+}
 
 
