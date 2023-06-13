@@ -11,7 +11,7 @@ const calc_value = {
     
 function addStorage(e) {
    const nameInput = e.target.name;
-//    console.dir(e.target)
+//    console.dir( e.target)
    
     let resultImt = 0;
     const targetValue = e.target.value;
@@ -49,7 +49,7 @@ function addStorage(e) {
 function calcImt (e) {
      if (calc_value.weight && calc_value.height) {
         resultImt = calc_value.weight / ((calc_value.height/100)**2)
-        e.target.form.children[3].textContent = `Індекс маси тіла:${resultImt.toFixed(1)}`
+        e.target.form.children[3].children[0].textContent = `${resultImt.toFixed(1)}`;
     }
 }
 

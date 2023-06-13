@@ -67,34 +67,48 @@
           <p class="visually-hidden">Тренажерний зал в Тернополі на БАМі</p>
           <h3 class="hero-desc">Зробіть три кроки до здорового життя!</h3>
           <ul class="hero-motivation">
-            <li>Збалансоване харчування та здорова їжа
-              <img src="./images/balanced-nutrition.png" alt="balanced-nutrition" width="150" height="150">
+            <li>
+              <img src="./images/balanced-nutrition1.png" alt="balanced-nutrition" width="120" height="120">
+              Збалансоване харчування та здорова їжа
             </li>
-            <li>Фізичні вправи та догляд за тілом
-              <img src="./images/exercise.png" alt="exercise" width="150" height="150">
+            <li>
+              <img src="./images/exercise1.png" alt="exercise" width="150" height="150">
+              Фізичні вправи та догляд за тілом
             </li>
-            <li>Жити в гармонії із собою, ділитися насолодою з іншими.</li>
+            <li>
+              <img src="./images/love1.png" alt="love" width="120" height="120">
+              Жити в гармонії із собою, ділитися насолодою з іншими.
+            </li>
           </ul>
           <ul class="hero-calculator">
-            <p>Калькулятори</p>
+            <p>Калькулятори:</p>
             <li>Індекс маси тіла
-              <form action="" class="calc-imt">
+              <form action="" class="calc-imt view">
                 <p>Для введення даних переміщуйте повзунок на лінії</p>
                 <label for="weight">
                   Вага (кг): 
                   <input name="weight" type="number" min="40" max="130"/>
-                  <input name="weight-size-control" type="range" min="40" max="130" />
+                  <input name="weight-size-control" type="range" min="40" max="130" class="input-range" />
                 </label>
                 
                 
                 <label for="height">
                   Ріст (см):
                   <input name="height" type="number" min="100" max="220"/>
-                  <input name="height-size-control" type="range" min="100" max="220" />
+                  <input name="height-size-control" type="range" min="100" max="220"  class="input-range"/>
                 </label>
                 
-                <label>Індекс маси тіла:</label>
+                <p>Індекс маси тіла: <span></span></p>
+                <ul class="description-imt">
+                  <li>Якщо індекс мати тіла (ІМТ) менше <span>18,5</span>  – вага недостатня. Підвищується ризик виникнення таких розладів здоров’я, як аменорея у жінок (відсутність місячних), крихкість кісток, нестача поживних речовин для здорового функціонування усіх систем організму.</li>
+                  <li>Якщо індекс маси тіла (ІМТ) становить <span>18,5 - 24,9</span>  – вага у нормі. «Ідеальний» ІМТ для людей віком до 25 років - <span>22 - 23</span>. Якщо ІМТ наближується до показника<span>25</span> , почніть контролювати об’єм талії і пам’ятайте про про фізичну активність.</li>
+                  <li>Якщо індекс маси тіла (ІМТ) становить <span>25.0-29,9</span>  - то у Вас надлишкова вага, що є фактором високого ризику виникнення серцево-судинних захворювань, цукрового діабету, порушень статевої функції та інших захворювань. Намагайтеся зменшити вагу, почніть правильно харчуватися і займатися спортом.</li>
+                  <li>Якщо індекс маси тіла (ІМТ) більше  <span>30</span> - у вас велика надмірна вага (ожиріння). Вам треба худнути до більш низьких значень ІМТ, щоб здорово жити. Високий індекс маси тіла пов'язаний з підвищеним ризиком смертності від будь-яких причин, включаючи діабет, хвороби серцево-судинної системи, гіпертонію і артрит.</li>
+                </ul>
+                
               </form>
+              
+              <button onclick="showMore(this)">Порахувати</button>
             </li>
             <li>% жиру в організмі</li>
             <li>Потреба калорій</li>
