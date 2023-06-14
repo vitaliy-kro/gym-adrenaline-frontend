@@ -385,10 +385,7 @@ header {
     &.hero-calculator button {font-size: 16px;
         border-radius: 10px;
         background-color: #A2B035;    }
-    &.hero-calculator span {    
-        font-size: 16px;
-        color: #6A70EB;}
-        
+    
 }
 .hero-calculator > li {
     padding: 10px;
@@ -411,11 +408,26 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    text-align:justify;
+  
+    
 }
-.description-imt span {
+
+.result-imt {
     font-size: 16px;
     color: #6A70EB;
+   &.ln-h{line-height: 1.5;}
 }
+// __________________________________________________calc Fat_______________________________________
+
+.calc-body-fat {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+}
+
 
 // _________________________________section galery_____________________
 .section-galery {

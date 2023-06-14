@@ -98,19 +98,78 @@
                   <input name="height-size-control" type="range" min="100" max="220"  class="input-range"/>
                 </label>
                 
-                <p>Індекс маси тіла: <span></span></p>
+                <p >Індекс маси тіла: 
+                  <span class="result-imt ln-h"></span>
+                  <br/>
+                  <span ></span>
+                </p>
                 <ul class="description-imt">
-                  <li>Якщо індекс мати тіла (ІМТ) менше <span>18,5</span>  – вага недостатня. Підвищується ризик виникнення таких розладів здоров’я, як аменорея у жінок (відсутність місячних), крихкість кісток, нестача поживних речовин для здорового функціонування усіх систем організму.</li>
-                  <li>Якщо індекс маси тіла (ІМТ) становить <span>18,5 - 24,9</span>  – вага у нормі. «Ідеальний» ІМТ для людей віком до 25 років - <span>22 - 23</span>. Якщо ІМТ наближується до показника<span>25</span> , почніть контролювати об’єм талії і пам’ятайте про про фізичну активність.</li>
-                  <li>Якщо індекс маси тіла (ІМТ) становить <span>25.0-29,9</span>  - то у Вас надлишкова вага, що є фактором високого ризику виникнення серцево-судинних захворювань, цукрового діабету, порушень статевої функції та інших захворювань. Намагайтеся зменшити вагу, почніть правильно харчуватися і займатися спортом.</li>
-                  <li>Якщо індекс маси тіла (ІМТ) більше  <span>30</span> - у вас велика надмірна вага (ожиріння). Вам треба худнути до більш низьких значень ІМТ, щоб здорово жити. Високий індекс маси тіла пов'язаний з підвищеним ризиком смертності від будь-яких причин, включаючи діабет, хвороби серцево-судинної системи, гіпертонію і артрит.</li>
+                  <li>&nbsp &nbsp Якщо індекс мати тіла (ІМТ) менше <span class="result-imt">18,5</span>  – вага недостатня. Підвищується ризик виникнення таких розладів здоров’я, як аменорея у жінок (відсутність місячних), крихкість кісток, нестача поживних речовин для здорового функціонування усіх систем організму.</p></li>
+                  <li>&nbsp &nbsp Якщо індекс маси тіла (ІМТ) становить <span class="result-imt">18,5 - 24,9</span>  – вага у нормі. «Ідеальний» ІМТ для людей віком до 25 років - <span class="result-imt">22 - 23</span>. Якщо ІМТ наближується до показника<span class="result-imt">25</span> , почніть контролювати об’єм талії і пам’ятайте про про фізичну активність.</li>
+                  <li>&nbsp &nbsp Якщо індекс маси тіла (ІМТ) становить <span class="result-imt">25.0-29,9</span>  - то у Вас надлишкова вага, що є фактором високого ризику виникнення серцево-судинних захворювань, цукрового діабету, порушень статевої функції та інших захворювань. Намагайтеся зменшити вагу, почніть правильно харчуватися і займатися спортом.</li>
+                  <li>&nbsp &nbsp Якщо індекс маси тіла (ІМТ) більше  <span class="result-imt">30</span> - у вас велика надмірна вага (ожиріння). Вам треба худнути до більш низьких значень ІМТ, щоб здорово жити. Високий індекс маси тіла пов'язаний з підвищеним ризиком смертності від будь-яких причин, включаючи діабет, хвороби серцево-судинної системи, гіпертонію і артрит.</li>
                 </ul>
                 
               </form>
               
               <button onclick="showMore(this)">Порахувати</button>
             </li>
-            <li>% жиру в організмі</li>
+            <li>% жиру в організмі
+              <form action="" class="calc-body-fat view">
+                <p>Для введення даних переміщуйте повзунок на лінії</p>
+                <label for="sex">
+                  Стать:
+                  <label for="sex">
+                    Жінка <input name="sex" type="radio" value="Жінка"/>
+                  </label>
+                  <label for="sex">
+                    Чоловік <input name="sex" type="radio"  value="Чоловік" />
+                  </label>
+                  
+                </label>
+                
+                <label for="age">
+                  Вік: 
+                  <input name="age" type="number" min="15" max="130"/>
+                  <input name="age-size-control" type="range" min="15" max="130" class="input-range" />
+                </label>
+                        
+                <label for="height">
+                  Ріст (см):
+                  <input name="height" type="number" min="100" max="220"/>
+                  <input name="height-size-control" type="range" min="100" max="220"  class="input-range"/>
+                </label>
+                <label for="weight">
+                  Вага (кг): 
+                  <input name="weight" type="number" min="40" max="130"/>
+                  <input name="weight-size-control" type="range" min="40" max="130" class="input-range" />
+                </label>
+                
+                
+                <label for="skin-fold">
+                  Шкірна складка на грудях (мм):
+                  <input name="skin-fold" type="number" min="1" max="100"/>
+                  <input name="height-size-control" type="range" min="1" max="100"  class="input-range"/>
+                </label>
+                <label for="skin-fold-w">
+                  Шкірна складка на животі (мм):
+                  <input name="skin-fold-w" type="number" min="1" max="100"/>
+                  <input name="weight-size-control" type="range" min="1" max="100" class="input-range" />
+                </label>                                
+                <label for="skin-fold-l">
+                  Шкірна складка стегна (мм):
+                  <input name="skin-fold-l" type="number" min="1" max="100"/>
+                  <input name="height-size-control" type="range" min="1" max="100"  class="input-range"/>
+                </label>
+
+                <p >Процент жиру в тілі:
+                  <span class="result-imt ln-h"></span>
+                  
+                </p>
+                                
+              </form>
+              <button onclick="showMore(this)">Порахувати</button>
+            </li>
             <li>Потреба калорій</li>
           </ul>
           <!-- <button class="sec-hero-button" type="button" data-modal-open>Розрахувати</button> -->

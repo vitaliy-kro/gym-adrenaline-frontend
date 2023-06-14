@@ -13,7 +13,6 @@ function addStorage(e) {
    const nameInput = e.target.name;
 //    console.dir( e.target)
    
-    let resultImt = 0;
     const targetValue = e.target.value;
 
    switch (nameInput) {
@@ -47,10 +46,23 @@ function addStorage(e) {
 }
 
 function calcImt (e) {
-     if (calc_value.weight && calc_value.height) {
+    const {children} = e.target.form
+
+    if (calc_value.weight && calc_value.height) {
         resultImt = calc_value.weight / ((calc_value.height/100)**2)
-        e.target.form.children[3].children[0].textContent = `${resultImt.toFixed(1)}`;
+        children[3].children[0].textContent = `${resultImt.toFixed(1)}`;
+        
+
+        if (resultImt < 18.5) {children[3].children[2].textContent = 'Вам слід набрати вагу! Вага недостатня, щоб бути здоровим!'};
+
+        if (24.9 > resultImt && resultImt >= 18.5) {children[3].children[2].textContent = 'Ви молодець, Ваша вага в нормі!'}
+        
+        if (29.9 > resultImt && resultImt >= 25) {children[3].children[2].textContent = 'Вага надмірна! Контролюйте раціон і займайтеся спортом!'}
+
+        if (resultImt >= 30) {children[3].children[2].textContent = 'Велика надмірна вага! Вам треба худнути! Полюбіть себе, життя чудове! '};
     }
+    
+
 }
 
 
