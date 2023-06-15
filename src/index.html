@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
@@ -134,11 +134,6 @@
                   <input name="age-size-control" type="range" min="15" max="130" class="input-range" />
                 </label>
                         
-                <label for="height">
-                  Ріст (см):
-                  <input name="height" type="number" min="100" max="220"/>
-                  <input name="height-size-control" type="range" min="100" max="220"  class="input-range"/>
-                </label>
                 <label for="weight">
                   Вага (кг): 
                   <input name="weight" type="number" min="40" max="130"/>
@@ -147,24 +142,26 @@
                 
                 
                 <label for="skin-fold">
-                  Шкірна складка на грудях (мм):
+                  <span>Шкірна складка на грудях (мм):</span>
                   <input name="skin-fold" type="number" min="1" max="100"/>
-                  <input name="height-size-control" type="range" min="1" max="100"  class="input-range"/>
+                  <input name="skin-fold-control" type="range" min="1" max="100"  class="input-range"/>
                 </label>
                 <label for="skin-fold-w">
-                  Шкірна складка на животі (мм):
+                  <span>Шкірна складка на животі (мм):</span>
                   <input name="skin-fold-w" type="number" min="1" max="100"/>
-                  <input name="weight-size-control" type="range" min="1" max="100" class="input-range" />
+                  <input name="skin-fold-w-control" type="range" min="1" max="100" class="input-range" />
                 </label>                                
                 <label for="skin-fold-l">
-                  Шкірна складка стегна (мм):
+                  <span>Шкірна складка стегна (мм):</span>
                   <input name="skin-fold-l" type="number" min="1" max="100"/>
-                  <input name="height-size-control" type="range" min="1" max="100"  class="input-range"/>
+                  <input name="skin-fold-l-control" type="range" min="1" max="100"  class="input-range"/>
                 </label>
 
                 <p >Процент жиру в тілі:
                   <span class="result-imt ln-h"></span>
-                  
+                  <br>
+                  <span></span>
+                  <span class="result-imt ln-h"></span>
                 </p>
                                 
               </form>
@@ -294,5 +291,6 @@
       </ul>
     </div>
     <script src="./js/read-more-btn.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

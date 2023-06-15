@@ -1,7 +1,7 @@
-const indexBodyWeight = document.querySelector('.calc-imt')
+const indexBodyWeight = document.querySelector('.calc-imt');
 
 indexBodyWeight.addEventListener('input', addStorage)
-
+// console.log(indexBodyWeight)
 // const IMT_CALC = "calc_1";
 const calc_value = {
     weight: 0,

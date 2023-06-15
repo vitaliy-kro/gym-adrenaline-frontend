@@ -13,6 +13,5 @@ function showMore(btn) {
    
     view.querySelector(".view").classList.toggle("active");
 
-
     btn.textContent == "Порахувати" ? btn.textContent = "Сховати" : btn.textContent = "Порахувати";
 }
