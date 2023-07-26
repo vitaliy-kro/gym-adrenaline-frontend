@@ -13,8 +13,6 @@
     
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <!-- <include src="./partials/example.html"></include> -->
     <header>
       <div class="container nav-heder">
         <a class="logo" href="/"> 
@@ -25,6 +23,7 @@
             <li> <a href="/" class="nav-link link navigation-active">Головна</a> </li>
             <!-- <li> <a href="" class="nav-link link">Галерея</a> </li> -->
             <li> <a href="#sec-service" class="nav-link link">Послуги</a> </li>
+            <li> <a href="./calc.html" class="nav-link link">Калькулятори</a> </li>
             <li> <a href="" class="nav-link link">Блог</a> </li>
             <li> <a href="" class="nav-link link">Контакти</a> </li>
           </ul>
@@ -63,113 +62,40 @@
     <main>
       <section class="section-hero">
         <div class="container cont-hero">
-          <h1 class="hero-title">Тренажерний зал "Adrenalin"</h1>
+          <h1 class="hero-title">Тренажерний зал <span>"Adrenalin"</span></h1>
           <p class="visually-hidden">Тренажерний зал в Тернополі на БАМі</p>
-          <h3 class="hero-desc">Зробіть три кроки до здорового життя!</h3>
-          <ul class="hero-motivation">
-            <li>
-              <img src="./images/balanced-nutrition1.png" alt="balanced-nutrition" width="120" height="120">
-              Збалансоване харчування та здорова їжа
-            </li>
-            <li>
-              <img src="./images/exercise1.png" alt="exercise" width="150" height="150">
-              Фізичні вправи та догляд за тілом
-            </li>
-            <li>
-              <img src="./images/love1.png" alt="love" width="120" height="120">
-              Жити в гармонії із собою, ділитися насолодою з іншими.
-            </li>
-          </ul>
-          <ul class="hero-calculator">
-            <p>Калькулятори:</p>
-            <li>Індекс маси тіла
-              <form action="" class="calc-imt view">
-                <p>Для введення даних переміщуйте повзунок на лінії</p>
-                <label for="weight">
-                  Вага (кг): 
-                  <input name="weight" type="number" min="40" max="130"/>
-                  <input name="weight-size-control" type="range" min="40" max="130" class="input-range" />
-                </label>
-                
-                
-                <label for="height">
-                  Ріст (см):
-                  <input name="height" type="number" min="100" max="220"/>
-                  <input name="height-size-control" type="range" min="100" max="220"  class="input-range"/>
-                </label>
-                
-                <p >Індекс маси тіла: 
-                  <span class="result-imt ln-h"></span>
-                  <br/>
-                  <span ></span>
-                </p>
-                <ul class="description-imt">
-                  <li>&nbsp &nbsp Якщо індекс мати тіла (ІМТ) менше <span class="result-imt">18,5</span>  – вага недостатня. Підвищується ризик виникнення таких розладів здоров’я, як аменорея у жінок (відсутність місячних), крихкість кісток, нестача поживних речовин для здорового функціонування усіх систем організму.</p></li>
-                  <li>&nbsp &nbsp Якщо індекс маси тіла (ІМТ) становить <span class="result-imt">18,5 - 24,9</span>  – вага у нормі. «Ідеальний» ІМТ для людей віком до 25 років - <span class="result-imt">22 - 23</span>. Якщо ІМТ наближується до показника<span class="result-imt">25</span> , почніть контролювати об’єм талії і пам’ятайте про про фізичну активність.</li>
-                  <li>&nbsp &nbsp Якщо індекс маси тіла (ІМТ) становить <span class="result-imt">25.0-29,9</span>  - то у Вас надлишкова вага, що є фактором високого ризику виникнення серцево-судинних захворювань, цукрового діабету, порушень статевої функції та інших захворювань. Намагайтеся зменшити вагу, почніть правильно харчуватися і займатися спортом.</li>
-                  <li>&nbsp &nbsp Якщо індекс маси тіла (ІМТ) більше  <span class="result-imt">30</span> - у вас велика надмірна вага (ожиріння). Вам треба худнути до більш низьких значень ІМТ, щоб здорово жити. Високий індекс маси тіла пов'язаний з підвищеним ризиком смертності від будь-яких причин, включаючи діабет, хвороби серцево-судинної системи, гіпертонію і артрит.</li>
-                </ul>
-                
-              </form>
-              
-              <button onclick="showMore(this)">Порахувати</button>
-            </li>
-            <li>% жиру в організмі
-              <form action="" class="calc-body-fat view">
-                <p>Для введення даних переміщуйте повзунок на лінії</p>
-                <label for="sex">
-                  Стать:
-                  <label for="sex">
-                    Жінка <input name="sex" type="radio" value="Жінка"/>
-                  </label>
-                  <label for="sex">
-                    Чоловік <input name="sex" type="radio"  value="Чоловік" />
-                  </label>
-                  
-                </label>
-                
-                <label for="age">
-                  Вік: 
-                  <input name="age" type="number" min="15" max="130"/>
-                  <input name="age-size-control" type="range" min="15" max="130" class="input-range" />
-                </label>
-                        
-                <label for="weight">
-                  Вага (кг): 
-                  <input name="weight" type="number" min="40" max="130"/>
-                  <input name="weight-size-control" type="range" min="40" max="130" class="input-range" />
-                </label>
-                
-                
-                <label for="skin-fold">
-                  <span>Шкірна складка на грудях (мм):</span>
-                  <input name="skin-fold" type="number" min="1" max="100"/>
-                  <input name="skin-fold-control" type="range" min="1" max="100"  class="input-range"/>
-                </label>
-                <label for="skin-fold-w">
-                  <span>Шкірна складка на животі (мм):</span>
-                  <input name="skin-fold-w" type="number" min="1" max="100"/>
-                  <input name="skin-fold-w-control" type="range" min="1" max="100" class="input-range" />
-                </label>                                
-                <label for="skin-fold-l">
-                  <span>Шкірна складка стегна (мм):</span>
-                  <input name="skin-fold-l" type="number" min="1" max="100"/>
-                  <input name="skin-fold-l-control" type="range" min="1" max="100"  class="input-range"/>
-                </label>
-
-                <p >Процент жиру в тілі:
-                  <span class="result-imt ln-h"></span>
-                  <br>
-                  <span></span>
-                  <span class="result-imt ln-h"></span>
-                </p>
-                                
-              </form>
-              <button onclick="showMore(this)">Порахувати</button>
-            </li>
-            <li>Потреба калорій</li>
-          </ul>
+                    
           <!-- <button class="sec-hero-button" type="button" data-modal-open>Розрахувати</button> -->
+        </div>
+      </section>
+      <section class="section-motivation section">
+        <div class="container">
+          <h3 class="motiv-desc">Зробіть три кроки до здорового життя!</h3>
+          <ul class="motivation-list">
+            <li>
+              <img src="./images/food.webp" alt="balanced-nutrition">
+              Збалансоване харчування та здорова їжа
+              <button type="button">Більше</button>
+            </li>
+            <li>
+              <img src="./images/gym.webp" alt="exercise">
+              Фізичні вправи та догляд за тілом
+              <button type="button">Більше</button>
+            </li>
+            <li>
+              <img src="./images/pease.webp" alt="love">
+              Жити в гармонії із собою, ділитися насолодою з іншими
+              <button type="button">Більше</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-on-calc section">
+        <div class="container cont-on-calc">
+          <h3>Перевір свою форму зараз</h3> 
+          <p>Прості калькулятори допоможуть визначити ІМТ (індекс маси тіла), 
+            денну потребу калорій та ін.</p>
+          <button type="button">Більше</button>
         </div>
       </section>
       <section class="section-galery section">
@@ -266,7 +192,7 @@
     <div class="menu-container js-menu-container" id="mobile-menu">
       <ul class="mobile-menu list">
         <!-- <li> <a href="/" class="nav-link link navigation-active">Головна</a> </li> -->
-        <!-- <li> <a href="" class="nav-link link">Галерея</a> </li> -->
+        <li> <a href="./calc.html" class="nav-link link">Калькулятори</a> </li>
         <li> <a href="#sec-service" class="nav-link link">Послуги</a> </li>
         <li> <a href="" class="nav-link link">Блог</a> </li>
         <li> <a href="" class="nav-link link">Контакти</a> </li>
