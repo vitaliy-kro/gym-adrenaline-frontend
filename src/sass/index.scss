@@ -4,9 +4,9 @@
 :root {
     --brand-color: #A2B035;
     --zagolovok: #2B2B2B;
-    --hover-color: #FFF017;
+    --hover-color: #F2B90F;
     --background: #85777B;
-    --accent-color: #F24171;
+    --accent-color: #F26457;
     /* колір тексту    */
     --text: #434455;
     --studio: #F4F4FD;
@@ -46,6 +46,12 @@ img {
 }
 
 /* кнопки, зсилки */
+button {
+    border-style: none;
+    padding: 5px;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #F26457 0%, #F2884B 50%, #F2B33D 100%);;
+}
 
 .link {
     text-decoration-line: none;
@@ -70,16 +76,18 @@ img {
     padding-right: 15px;
   
     max-width: 1740px;
-    @media screen and (max-width: 767px) {   max-width: 428px;  };
-    @media screen and (min-width: 768px) and (max-width: 1199px) { max-width: 900px;};
+    @media screen and (max-width: 767px) {  
+         max-width: 428px;  };
+    @media screen and (min-width: 768px) and (max-width: 1199px) { 
+        max-width: 900px;};
 }
 
 .section {
-    padding-top: 52px;
-    padding-bottom: 52px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     @media screen and (min-width: 1200px) {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
 
@@ -160,7 +168,7 @@ header {
     left: 0;
     width: 100%;
     height: 4px;
-    background-color: var(--hover-color);
+    background-color: var(--brand-color);
     border-radius: 2px;
 }
 
@@ -342,27 +350,188 @@ header {
     clip-path: inset(50%);
     margin: -1px;
 }
+.section-hero {
+    background-image: url("../images/foto_zal_3.webp") ;
+    color: #6B6650;
+    background-repeat: no-repeat;
+
+    background-position: center;
+    background-size: cover;
+}
 .cont-hero {
     padding-top: 52px;
     padding-bottom: 52px;
     text-align: center;
 }
 .hero-title {
-    // color: #FFFFFF;
-    font-weight: 700;
-
-    line-height: 1.1;
-
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 1.5;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    // & span {
+    //     color: #F26457;
+    // }
+    @media screen and (max-width: 767px) {  
+        font-size: 30px; 
+        max-width: 300px; };
+    @media screen and (min-width: 768px) and (max-width: 1199px) { 
+     font-size: 50px;
+     max-width: 300px;};
 }
-.hero-motivation {
+// _________________________Section motivation_______________________
+.section-motivation {
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--zagolovok);
+    text-align: center;
+    @media screen and (max-width: 767px) {  
+        display: none; };
+    @media screen and (min-width: 768px) and (max-width: 1199px) { 
+     font-size: 32px;
+    };
+}
+.motivation-list {
+    margin-top: 20px;
     display: flex;
     gap: 20px;
-   
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--background);
+    @media screen and (max-width: 767px) {  
+        font-size: 24px; };
+    @media screen and (min-width: 768px) and (max-width: 1199px) { 
+     font-size: 28px;
+    };
 }
-.hero-motivation > li {
-    width: calc((100% - 40px)/2);
+
+.motivation-list > li {
+    width: calc((100% - 40px)/3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    & img {
+       max-width: 450px;
+       max-height: 450px;
+        @media screen and (min-width: 768px) and (max-width: 1199px) { 
+            max-width: 300px;
+            max-height: 300px;};
+    }    
+}
+// ____________________section-on-calc________________________
+.section-on-calc {
+    background-image: url('../images/woman_for_hero.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #D9D0C7;
+}
+.cont-on-calc {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;    
+    text-align: center;
+    align-items: center;
+    margin-right: 400px;
+
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    
+    color: var(--background);
+    @media screen and (max-width: 767px) {  
+        margin-right: 200px;
+        font-size: 20px; };
+    @media screen and (min-width: 768px) and (max-width: 1199px) { 
+        margin-right: 350px;
+        font-size: 24px;
+    };
+    
+
+    & h3 {
+        font-weight: 700;
+        font-size: 32px;
+        @media screen and (max-width: 767px) {  
+            max-width: 250px;
+            font-size: 24px; };
+        @media screen and (min-width: 768px) and (max-width: 1199px) { 
+         font-size: 28px;
+        };        
+    }
+    & p {
+        
+        max-width: 500px;
+        @media screen and (max-width: 767px) {  
+            
+            max-width: 250px; };
+        @media screen and (min-width: 768px) and (max-width: 1199px) { 
+            margin-right: 100px;
+            max-width: 300px;
+        };
+    }
+    & button {
+        
+        max-width: 150px;
+    }
+}
+
+// ___________________Page calculator____________________________
+.hero-calculator {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+    &.hero-calculator button {font-size: 16px;
+        border-radius: 10px;
+        background-color: #A2B035;    }
+    
+}
+.hero-calculator > li {
+    padding: 10px;
+    background-color: #FFE88C;
+}
+.input-range{
+    width: 230px;
+    color: #6A70EB;
+    background-color: #5D8991
+}
+.calc-imt {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+}
+.description-imt {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align:justify;
+  
+    
+}
+
+.result-imt {
+    font-size: 16px;
+    color: #6A70EB;
+   &.ln-h{line-height: 1.5;}
+}
+// __________________________________________________calc Fat_______________________________________
+
+.calc-body-fat {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
 }
 
 // _________________________________section galery_____________________
@@ -483,14 +652,34 @@ header {
     
     // overflow: scroll;
 
-    // width: 90%;
-    // height: 300px;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0px 25px 40px #1687d933;
 }
 
 // ___________text  read more_______
-.hide {
-    display: none;
+.content {
+    overflow: hidden;
+    max-height: 120px;
+    transition: all ease-in 1s;
+
+    &.active{
+    max-height: 1500px;
+    // height: auto;
+    overflow-y: visible;
+    transition: all ease-in 1s;
+    }
 }
+.view {
+    overflow: hidden;
+    max-height: 0px;
+    transition: all ease-in 1s;
+
+    &.active{
+    max-height: 1000px;
+    // height: auto;
+    overflow-y: visible;
+    transition: all ease-in 1s;
+    }
+}
+

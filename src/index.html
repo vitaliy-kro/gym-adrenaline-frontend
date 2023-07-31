@@ -10,11 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <!-- <include src="./partials/example.html"></include> -->
     <header>
       <div class="container nav-heder">
         <a class="logo" href="/"> 
@@ -25,6 +23,7 @@
             <li> <a href="/" class="nav-link link navigation-active">Головна</a> </li>
             <!-- <li> <a href="" class="nav-link link">Галерея</a> </li> -->
             <li> <a href="#sec-service" class="nav-link link">Послуги</a> </li>
+            <li> <a href="./calc.html" class="nav-link link">Калькулятори</a> </li>
             <li> <a href="" class="nav-link link">Блог</a> </li>
             <li> <a href="" class="nav-link link">Контакти</a> </li>
           </ul>
@@ -63,21 +62,40 @@
     <main>
       <section class="section-hero">
         <div class="container cont-hero">
-          <h1 class="hero-title">Тренажерний зал "Adrenalin"</h1>
+          <h1 class="hero-title">Тренажерний зал <span>"Adrenalin"</span></h1>
           <p class="visually-hidden">Тренажерний зал в Тернополі на БАМі</p>
-          <h3 class="hero-desc">Зробіть три кроки до здорового життя!</h3>
-          <ul class="hero-motivation">
-            <li>Збалансоване харчування та здорова їжа</li>
-            <li>Фізичні вправи та догляд за тілом</li>
-            <li>Жити в гармонії із собою, ділитися насолодою з іншими.</li>
-          </ul>
-          <ul class="hero-calculator">
-            <p>Калькулятори</p>
-            <li>Індекс маси тіла</li>
-            <li>% жиру в організмі</li>
-            <li>Потреба калорій</li>
-          </ul>
+                    
           <!-- <button class="sec-hero-button" type="button" data-modal-open>Розрахувати</button> -->
+        </div>
+      </section>
+      <section class="section-motivation section">
+        <div class="container">
+          <h3 class="motiv-desc">Зробіть три кроки до здорового життя!</h3>
+          <ul class="motivation-list">
+            <li>
+              <img src="./images/food.webp" alt="balanced-nutrition">
+              Збалансоване харчування та здорова їжа
+              <button type="button">Більше</button>
+            </li>
+            <li>
+              <img src="./images/gym.webp" alt="exercise">
+              Фізичні вправи та догляд за тілом
+              <button type="button">Більше</button>
+            </li>
+            <li>
+              <img src="./images/pease.webp" alt="love">
+              Жити в гармонії із собою, ділитися насолодою з іншими
+              <button type="button">Більше</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-on-calc section">
+        <div class="container cont-on-calc">
+          <h3>Перевір свою форму зараз</h3> 
+          <p>Прості калькулятори допоможуть визначити ІМТ (індекс маси тіла), 
+            денну потребу калорій та ін.</p>
+          <button type="button">Більше</button>
         </div>
       </section>
       <section class="section-galery section">
@@ -174,7 +192,7 @@
     <div class="menu-container js-menu-container" id="mobile-menu">
       <ul class="mobile-menu list">
         <!-- <li> <a href="/" class="nav-link link navigation-active">Головна</a> </li> -->
-        <!-- <li> <a href="" class="nav-link link">Галерея</a> </li> -->
+        <li> <a href="./calc.html" class="nav-link link">Калькулятори</a> </li>
         <li> <a href="#sec-service" class="nav-link link">Послуги</a> </li>
         <li> <a href="" class="nav-link link">Блог</a> </li>
         <li> <a href="" class="nav-link link">Контакти</a> </li>
@@ -199,5 +217,6 @@
       </ul>
     </div>
     <script src="./js/read-more-btn.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
